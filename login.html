@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swapverse | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2 style="color:white;">SWAPVERSE</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="listing.html">Create Listing</a>
+    </div>
+</nav>
+
+<div class="section">
+    <h2>Login to Swapverse</h2>
+
+    <form onsubmit="loginUser(event)" class="card" style="margin:auto;max-width:400px;">
+        
+        <label>Email</label><br>
+        <input id="loginEmail" type="email" required><br><br>
+
+        <label>Password</label><br>
+        <input id="loginPassword" type="password" required><br><br>
+
+        <button style="background:var(--blue);color:white;padding:10px 20px;border:none;border-radius:6px;">
+            Login
+        </button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

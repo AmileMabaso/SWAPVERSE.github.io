@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swapverse | Create Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2 style="color:white;">SWAPVERSE</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="listing.html">Create Listing</a>
+    </div>
+</nav>
+
+<div class="section">
+    <h2>Create a New Listing</h2>
+
+    <form id="listingForm" onsubmit="submitListing(event)" class="card" style="margin:auto;max-width:500px;">
+
+        <label>Listing Type</label><br>
+        <select id="listingType" required>
+            <option value="Service">Service</option>
+            <option value="Product">Product</option>
+        </select><br><br>
+
+        <label>Title</label><br>
+        <input id="listingTitle" required><br><br>
+
+        <label>Price (R)</label><br>
+        <input id="listingPrice" type="number" required><br><br>
+
+        <label>Description</label><br>
+        <textarea id="listingDescription" rows="4" required></textarea><br><br>
+
+        <button style="background:var(--purple);color:white;padding:10px 25px;border:none;border-radius:6px;">
+            Submit Listing
+        </button>
+
+    </form>
+</div>
+
+<!-- DISPLAY LISTINGS -->
+<div class="section">
+    <h2>All Listings</h2>
+    <div id="displayArea" class="card-container"></div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    displayListings();
+</script>
+
+</body>
+</html>
